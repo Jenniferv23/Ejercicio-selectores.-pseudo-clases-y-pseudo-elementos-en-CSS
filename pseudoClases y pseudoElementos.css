@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px;
+    background-color:aqua;
+    border: 1 solid;
+    color: black;
+    height: 50px;
+    width: 100px;
+    cursor:pointer
+
+}
+
+.btn::before {
+    content: 'Pasa por encima';
+}
+
+.btn:hover {
+    background-color:greenyellow;
+    color: white;
+}
+
+.btn::after {
+    content: '¡Hecho!';
+    opacity: 0;
+}
+
+.btn:hover::before {
+    opacity: 0;
+}
+.btn:hover::after {
+    opacity: 1;
+}
+
+
